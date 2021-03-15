@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUDITH'S GAME OF LIFE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./images/bf-icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="table-container"></div>
+
+        <div class="buttons-container">
+          <div>
+            <input type="submit" name="" id="start-game" value="START GAME" />
+            <input type="submit" name="" id="stop-game" value="STOP GAME" />
+          </div>
+
+          <div>
+            <select name="" id="size-cols">
+              <option value="20">20</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+              <option value="70">70</option>
+              <option value="80">80</option>
+              <option value="90">90</option>
+              <option value="100">100</option>
+            </select>
+            <input type="submit" id="get-table" value="DRAW ME" />
+          </div>
+
+          <input type="submit" id="randomize" value="RANDOMIZE ME" />
+          <div class="counter-speed_container">
+            <div class="counter"><span id="gens">0</span> GENERATIONS</div>
+            <input type="range" min="10" max="500" value="245" id="set-speed" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
